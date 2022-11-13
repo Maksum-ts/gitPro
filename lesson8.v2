@@ -1,0 +1,78 @@
+package Lesson8v02;
+
+public class Main {
+
+
+    public static void main(String[] args){
+
+        Animal dog = new Animal(120 );
+        dog.say("dog");
+        dog.name("Jack");
+        dog.color("white");
+        dog.weight(21);
+        System.out.println(dog.name + "'s height is " + dog.height +"."+ "He can bark." );
+
+        Animal cat = new Animal(66);
+        cat.say("cat");
+        cat.name("Tom");
+        cat.color("orange");
+        cat.weight(6);
+        System.out.println(cat.name +"'s height is " + cat.height +"." + "He can meow.");
+
+        Animal dove = new Animal(12);
+        dove.say("dove");
+        dove.name("Dag");
+        dove.color("white");
+        dove.weight(2);
+        System.out.println(dove.name +"'s height is " + dove.height +"." + "He can fly.");
+
+        Animal  karp = new Animal(15);
+        karp.say("karp");
+        karp.name("Fik");
+        karp.color("black");
+        karp.weight(8);
+        System.out.println(karp.name +"'s height is " + karp.height +"." + "He can swim.");
+
+        Animal lion = new Animal(210);
+        lion.say("lion");
+        lion.name("Simba");
+        lion.color("yellow");
+        lion.weight(190);
+        System.out.println(lion.name +"'s height is " + lion.height +"." +  "He can run.");
+
+
+    }
+}
+
+package Lesson8v02;
+
+public class Animal {
+    public int height = 180;
+    public String name = "Animal";
+
+
+    public void color (String color) {
+        System.out.println("I'm " + color + ".");
+    }
+    public void name (String name) {
+        System.out.println("My name " + name + ".");
+    }
+
+    public void say (String name) {
+
+        System.out.println("Hello, I'm " + name + ".");
+    }
+    public Animal (int h ) {
+
+        height = h;
+    }
+    public void lion (String n ) {
+        name = n;
+    }
+
+    void weight(int w){
+
+        System.out.println("I weigh " + w + " kilogram. ");
+    }
+
+}
